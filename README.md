@@ -1,2 +1,3 @@
+#Trybe-Excercícios
 
-teste de modificação
+Atividades desenvolvidas com os conteúdos da Trybe.
