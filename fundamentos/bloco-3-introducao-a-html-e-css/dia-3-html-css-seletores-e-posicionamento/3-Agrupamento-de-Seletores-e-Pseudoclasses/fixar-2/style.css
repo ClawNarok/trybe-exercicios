@@ -1,0 +1,7 @@
+div:hover {
+    border: 5px ridge cadetblue;
+}
+
+div {
+    background-color: lightgray;
+}
