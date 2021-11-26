@@ -2,6 +2,27 @@ div:hover {
     border: 5px ridge cadetblue;
 }
 
-div {
-    background-color: lightgray;
+div h3:nth-child(odd) {
+    font-size: 10px;
+}
+
+body div:nth-child(3) {
+    background-color: pink;
+}
+
+body div:nth-child(4) {
+    background-color: red;
+}
+
+body div:nth-child(5) {
+    background-color: blue;
+    height: 50px;
+}
+
+body div:nth-child(6) {
+    background-color: purple;
+}
+
+body div:nth-child(7) {
+    background-color: green;
 }
