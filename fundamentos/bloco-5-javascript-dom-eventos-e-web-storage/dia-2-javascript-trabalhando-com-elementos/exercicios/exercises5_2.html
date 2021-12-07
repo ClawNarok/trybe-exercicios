@@ -57,7 +57,72 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+      let _body = document.querySelector('body');
+
+      let _h1 = document.createElement('h1');
+      _h1.innerText = "Exercício 5.2 - JavaScript DOM";
+      _body.appendChild(_h1);
+      
+      let _main = document.createElement('main');
+      _main.className = 'main-content';
+      _body.appendChild(_main);
+
+      let _sectionCenter = document.createElement('section');
+      _sectionCenter.className = 'center-content';
+      _main.appendChild(_sectionCenter);
+
+      let _p = document.createElement('p');
+      _p.innerText = 'Algum texto';
+      _sectionCenter.appendChild(_p);
+
+      let _sectionLeft = document.createElement('section');
+      _sectionLeft.className = 'left-content';
+      _main.appendChild(_sectionLeft);
+
+      let _sectionRight = document.createElement('section');
+      _sectionRight.className = 'right-content';
+      _main.appendChild(_sectionRight);
+
+      let _image = document.createElement('img');
+      _image.src = 'https://picsum.photos/200';
+      _image.className = 'small-image';
+      _sectionLeft.appendChild(_image);
+
+      let numerosExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      let _ul = document.createElement('ul');
+      for (let x = 0; x < numerosExtenso.length; x++)
+      {
+        let _li = document.createElement('li');
+        _li.innerText = numerosExtenso[x];
+        _ul.appendChild(_li);
+      }
+      _sectionRight.appendChild(_ul);
+
+      for (let x = 0; x < 3; x++)
+      {
+        let _h3 = document.createElement('h3');
+        _h3.innerText = `Titulo-${x + 1}`;
+        _main.appendChild(_h3);
+      }
+
+
+      _h1.className = "title";
+
+      let desc = document.querySelectorAll('h3');
+      for (let x = 0; x < desc.length; x++)
+      {
+        desc[x].className = 'description';
+      }
+
+      let remover = document.querySelectorAll('section');
+      for (let x = 0; x < remover.length; x++)
+      {
+        if (remover[x].className === "left-content")
+          remover[x].parentNode.removeChild(remover[x]);
+
+        if (remover[x].className === "right-content")
+          remover[x].parentNode;
+      }
     </script>
   </body>
 </html>
