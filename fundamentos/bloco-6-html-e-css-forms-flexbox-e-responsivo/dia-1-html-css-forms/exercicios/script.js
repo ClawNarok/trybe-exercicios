@@ -27,6 +27,7 @@ const estados = [['AC',	'Acre'],
 ['TO',	'Tocantins']];
 
 const select = document.querySelector('select');
+const btn = document.querySelector('#btn-enviar');
 
 
 function criaOption(value, txt,  pai )
