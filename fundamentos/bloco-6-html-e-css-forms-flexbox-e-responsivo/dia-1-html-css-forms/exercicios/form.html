@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" name="name id="name" placeholder="Nome" required maxlength="40" autofocus>
+        <br>
+        <input type="text" name="email" id="email" placeholder="Email" required maxlength="50">
+        <br>
+        <input type="text" name="cpf" id="cpf" placeholder="CPF" required maxlength="11">
+        <br>
+        <input type="text" name="endereco" id="endereco" placeholder="Endereço" required maxlength="200">
+        <br>
+        <input type="text" name="cidade" id="cidade" placeholder="Cidade" required maxlength="28">
+        <br>
+        <label for="estado">Estado:
+            <select name="estado" id="estado" required>
+            </select>
+        </label>
+        <br>
+        <label for="casa">
+            <input type="radio" name="tipo-moradia" value="Casa" id="casa" checked>Casa
+        </label>
+        <label for="apto">
+            <input type="radio" name="tipo-moradia" 
+            value="Apto" id="apto">Apartamento
+        </label>
+    </form>
+    <form action="" method="post">
+        <label for="resumo-cv">Resumo currículo
+            <br>
+            <textarea name="resumo-cv" id="resumo-cv" cols="30" rows="10" maxlength="1000" required></textarea>
+        </label>
+        <br>
+        <label for="cargo">
+            Cargo
+            <input type="text" name="cargo" id="cargo" minlength="40" required>
+        </label>
+        <br>
+        <label for="desc-cargo">
+            Descriçãp de cargo
+            <input type="text" name="desc-cargo" id="desc-cargo" minlength="500" required>
+        </label>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
